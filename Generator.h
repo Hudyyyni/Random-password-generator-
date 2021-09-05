@@ -3,7 +3,7 @@
 #include<vector>
 
 //Generator class
-// it's static because we want to assign it only once and then generate
+// it's static because we want to assign it only once 
 class Generator
 {
 public:
