@@ -21,12 +21,12 @@ private:
     std::string m_password;
     int m_leng;
 
-    //is password ok? default = false
+    //bool variable that holds information whether at least one character has been used
     bool ok{ false };
 
     //number of characters in our password 
-    //nums[0] = lower
-    //nums[1] = upper etc.
+    //nums[0] = lower case
+    //nums[1] = upper case etc.
 
     std::vector<int> nums{};
 
@@ -51,13 +51,13 @@ public:
     //password output
     friend std::ostream& operator <<(std::ostream& out, const RandomPassGenerator& pass);
 
-    //generate our password and choose lenghth of password(min is 8 characters)
+    //generathe the password based on the length (min 8 characters)
     void generate(int leng);
   
 
     //when password is generated
     //check if it has at least one character from upper,lower,digits and special characters
-    //if not, generate missing character and replace with most common one
+    //if not, generate missing character and replace with the most common one
     void checkPass();
    
 
