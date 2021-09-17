@@ -21,7 +21,7 @@ private:
     std::string m_password;
     int m_leng;
 
-    //is password ok? default = false
+    //is password ok(has at least one character from every string)? default = false
     bool ok{ false };
 
     //number of characters in our password 
@@ -30,7 +30,7 @@ private:
 
     std::vector<int> nums{};
 
-    //current picked string 
+    //currently picked string 
     std::string now;
 
     
