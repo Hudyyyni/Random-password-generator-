@@ -30,6 +30,18 @@ void RandomPassGenerator::addChartoPass()
     //now pick random char from our string and add to out password 
     m_password += now.at(Random::get(0, static_cast<int>(now.size() - 1)));
 }
+RandomPassGenerator::RandomPassGenerator(int how_many)
+{
+    now = "";
+    nums.push_back(0);
+    nums.push_back(0);
+    nums.push_back(0);
+    nums.push_back(0);
+
+    generate(how_many);
+
+
+}
 RandomPassGenerator::RandomPassGenerator() {
 
     now = "";
@@ -48,7 +60,7 @@ std::ostream& operator <<(std::ostream& out, const RandomPassGenerator& pass)
 }
 
 
-void RandomPassGenerator::generate(int leng)
+ void RandomPassGenerator::generate(int leng)
 {
     assert(leng >= 8 && leng <= 100 && "length of password must be at least 5 characters");
     m_leng = leng;
