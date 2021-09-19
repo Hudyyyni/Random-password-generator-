@@ -8,8 +8,8 @@ int main()
     int leng{};
     int amount{};
 
-    std::cout << "How many password would you like to generate? " << '\n';
-    std::cout << "Amount:";
+   
+    std::cout << "Passwords number:";
     std::cin >> amount;
     std::cout << "Length:";
     std::cin >> leng;
