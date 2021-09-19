@@ -1,6 +1,6 @@
 Random password generator
 
-To support my program I use"random" library: https://github.com/effolkronium/random
+To support my program I used "random" : https://github.com/effolkronium/random
 
 How it works:
 - I initialize static strings which contain all characters (lower case, upper case, digits and special characters)
